@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name "Espressif")(type "KiCad")(uri "/home/johan/Hämtningar/Espressif.kicad_sym")(options "")(descr ""))
-  (lib (name "Espressif (1)")(type "KiCad")(uri "/home/johan/Hämtningar/Espressif (1).kicad_sym")(options "")(descr ""))
-)
