@@ -8299,7 +8299,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Module_RaspberryPi_Pico:RaspberryPi_Pico_Common"
+		(property "Footprint" "pico:RaspberryPi_Pico_Common_THT"
 			(at 64.77 20.32 0)
 			(effects
 				(font
@@ -9628,7 +9628,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
+		(property "Footprint" "ACSI:Connector_ACSI_IDC"
 			(at 142.24 217.17 0)
 			(effects
 				(font
