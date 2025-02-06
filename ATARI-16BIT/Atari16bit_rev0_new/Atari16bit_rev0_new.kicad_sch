@@ -3964,6 +3964,126 @@
 				)
 			)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -4316,10 +4436,6 @@
 		(uuid "49312980-5e18-4683-b96e-2d2a866ad4bf")
 	)
 	(no_connect
-		(at 99.06 189.23)
-		(uuid "4b0d893e-9e90-4551-9dd3-34580c511272")
-	)
-	(no_connect
 		(at 132.08 162.56)
 		(uuid "4bb016d5-0f08-455b-9aa4-5f0b9335dda3")
 	)
@@ -4348,10 +4464,6 @@
 		(uuid "6435149d-e34a-4d4b-b758-e687ec961738")
 	)
 	(no_connect
-		(at 87.63 85.09)
-		(uuid "772f21d5-ea9a-4e87-8733-ccabcd70e18b")
-	)
-	(no_connect
 		(at 87.63 46.99)
 		(uuid "788cf691-011e-4ffe-ba14-36265ab08d67")
 	)
@@ -4372,10 +4484,6 @@
 		(uuid "9745ff28-6301-438d-ad03-9f4d6f0bee58")
 	)
 	(no_connect
-		(at 99.06 191.77)
-		(uuid "9b73b0d2-0c46-4b5c-a4e3-84a2d92cd5de")
-	)
-	(no_connect
 		(at 99.06 173.99)
 		(uuid "a23b9763-115a-4427-9675-2b38d18f64d5")
 	)
@@ -4394,10 +4502,6 @@
 	(no_connect
 		(at 33.02 130.81)
 		(uuid "c258775a-a11f-4421-88ac-69aba35d9ea1")
-	)
-	(no_connect
-		(at 87.63 74.93)
-		(uuid "c41500b1-2508-4be4-b3e1-a48ce2fb60a4")
 	)
 	(no_connect
 		(at 33.02 158.75)
@@ -4893,16 +4997,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 80.01) (xy 87.63 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afedad8a-3be7-4b1d-b569-d18aaaba88de")
-	)
-	(wire
-		(pts
 			(xy 179.07 214.63) (xy 187.96 214.63)
 		)
 		(stroke
@@ -5053,6 +5147,28 @@
 			)
 		)
 	)
+	(global_label "ACSI_D2"
+		(shape bidirectional)
+		(at 54.61 256.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "0365060c-7e77-44df-bdd5-83e067553fa2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SD_SPI_CS"
 		(shape input)
 		(at 69.85 215.9 0)
@@ -5163,6 +5279,28 @@
 			)
 		)
 	)
+	(global_label "ACSI_D7"
+		(shape bidirectional)
+		(at 54.61 269.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "118d9ebf-7b4d-4cf1-8a65-46ef32ecc1c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ACSI_RW"
 		(shape input)
 		(at 132.08 102.87 180)
@@ -5203,6 +5341,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ACSI_D0"
+		(shape bidirectional)
+		(at 54.61 251.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "13773172-bebe-4920-bc38-1802ed04bee0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5517,7 +5677,7 @@
 	)
 	(global_label "DDIR"
 		(shape output)
-		(at 88.9 80.01 0)
+		(at 87.63 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5527,7 +5687,7 @@
 		)
 		(uuid "4eee8ea2-976c-48a4-9adf-bbde5829ed4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 94.7265 80.01 0)
+			(at 93.4565 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5779,6 +5939,28 @@
 			)
 		)
 	)
+	(global_label "ESP_UART_TX"
+		(shape input)
+		(at 99.06 191.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "693356a4-c2d2-46a3-90f2-37c352db8282")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.1722 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ACSI_D5"
 		(shape bidirectional)
 		(at 132.08 48.26 180)
@@ -5819,6 +6001,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ACSI_D3"
+		(shape bidirectional)
+		(at 54.61 259.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "87ffc8c0-47ae-4208-a30a-0a5cad963e53")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5911,6 +6115,28 @@
 			)
 		)
 	)
+	(global_label "ACSI_D6"
+		(shape bidirectional)
+		(at 54.61 266.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "95434961-ceee-453a-a31f-37078b8d2555")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SD_SPI_MOSI"
 		(shape output)
 		(at 99.06 158.75 0)
@@ -5968,6 +6194,28 @@
 		(uuid "9999180e-f4cd-484d-b861-25f7ea0c21ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.8077 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_UART_RX"
+		(shape input)
+		(at 99.06 189.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "9a59c1d0-e2d7-4352-abd8-f970da0204a4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.4103 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6197,6 +6445,28 @@
 			)
 		)
 	)
+	(global_label "ACSI_D4"
+		(shape bidirectional)
+		(at 54.61 261.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "bbc7230c-4cf4-4b49-9316-500d7358e033")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ACSI_D2"
 		(shape bidirectional)
 		(at 137.16 212.09 180)
@@ -6397,7 +6667,7 @@
 	)
 	(global_label "Pico_DRQ"
 		(shape output)
-		(at 87.63 82.55 0)
+		(at 87.63 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6407,7 +6677,7 @@
 		)
 		(uuid "caaf393b-eb0b-4fa8-b399-3422b166557e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.0279 82.55 0)
+			(at 97.0279 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6479,6 +6749,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ACSI_D1"
+		(shape bidirectional)
+		(at 54.61 254 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "d9e619d6-d447-4e32-91e7-413370b1dad0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6562,6 +6854,28 @@
 		(uuid "e28369b4-fb15-4814-a6fb-7049b29fbe7d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 159.3055 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ACSI_D5"
+		(shape bidirectional)
+		(at 54.61 264.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "e35c1b4b-a7ce-4b94-958b-d017a28dcb5f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.8353 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6672,6 +6986,50 @@
 		(uuid "ec1a1e1f-bf75-4e56-a2a3-eeb16ccc8045")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 81.7242 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_UART_TX"
+		(shape input)
+		(at 87.63 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ecd67a14-f492-4b28-9984-c458286efe54")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.7422 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_UART_RX"
+		(shape output)
+		(at 87.63 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ecf57028-9329-4fc8-b562-706fa8833ffb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.9803 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8139,6 +8497,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Network08")
+		(at 49.53 259.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56c74a6b-48f9-477d-b425-9b9e6c3029ab")
+		(property "Reference" "RN4"
+			(at 49.784 245.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 49.784 247.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 49.53 247.015 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 49.53 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, small symbol"
+			(at 49.53 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "02d92625-6a7b-4030-b48e-a37b02dc7f8e")
+		)
+		(pin "1"
+			(uuid "20a04b95-f38e-417e-a577-3262d7d5ad38")
+		)
+		(pin "2"
+			(uuid "e1f5b641-f68e-42c3-8ed1-415f529026c4")
+		)
+		(pin "5"
+			(uuid "ccc2a157-6e48-4c07-bd7c-d31ede8b9007")
+		)
+		(pin "3"
+			(uuid "8a83b6e6-395b-4044-bc5c-bda620e426ea")
+		)
+		(pin "4"
+			(uuid "a0be109e-42e5-432c-a9b8-498a76290c4e")
+		)
+		(pin "9"
+			(uuid "b249f1c3-6c3a-43b8-80e5-852959fa6a09")
+		)
+		(pin "7"
+			(uuid "b7980fe1-fbd0-4419-8a13-4746776da2cf")
+		)
+		(pin "6"
+			(uuid "a12c8c93-6a19-4177-9599-e24e469152b7")
+		)
+		(instances
+			(project ""
+				(path "/015ded5c-743e-4c7a-816a-72fb4dc6b588"
+					(reference "RN4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 149.86 212.09 90)
 		(unit 1)
@@ -8650,6 +9097,73 @@
 			(project ""
 				(path "/015ded5c-743e-4c7a-816a-72fb4dc6b588"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 44.45 269.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94b86c5c-adf1-49d2-bb6a-0bf7571bc185")
+		(property "Reference" "#PWR026"
+			(at 48.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 40.64 269.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 44.45 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "334b9216-bc72-4952-b717-5f54f8eadaf7")
+		)
+		(instances
+			(project ""
+				(path "/015ded5c-743e-4c7a-816a-72fb4dc6b588"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
